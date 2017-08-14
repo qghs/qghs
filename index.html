@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飘雪</title>
+    <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js">
+</script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: black;
+
+    }
+</style>
+<body>
+<div></div>
+</body>
+<script>
+    var shijian=50;
+    var xuepiansize=70;
+    var xuepianyouming=0.7;
+    var shang;
+    var kuan;
+   var xue=$("div").html("强哥最帅！").css({"position":"absolute", "color":"#fff", "top":"-50px",
+   });
+   $(function () {
+       shang=$(document).width();
+       kuan=$(document).height();
+       setInterval(function () {
+           var sh1=shang*Math.random();
+           var Op=Math.random()*0.3*0.7;
+           var he=kuan;
+           var sh2=shang*Math.random();
+           var xuepian=20+Math.random()*xuepiansize;
+           var xia=5000+Math.random()*3000;
+           var kuan1=kuan;
+           xue.clone().appendTo("body").css(
+               {
+                   "left":sh1,
+                   "opacity":Op,
+                   "font-size":xuepian,
+                   "color":"#fff"
+
+               }
+           ).animate({
+               "top":kuan1,
+               "left":sh2,
+               "opacity":0.5
+           },xia,function () {
+               $(this).remove();
+           });
+
+
+
+
+
+
+
+       },shijian)
+
+
+
+
+
+
+
+   })
+
+
+
+
+
+
+</script>
+</html>
