@@ -1,0 +1,50 @@
+.logo-1{
+    padding: 0;
+    margin-top: 20px;
+    outline: 0px groove red;
+    width: 1200px;
+    height:50px;
+}
+@media screen and (max-width:1000px) {
+    .logo-1 {
+        width: 80%;
+        height:50px;
+    }
+}
+#body{
+    background-size:cover;
+
+}
+#nav{
+    width: 100%;
+    height: 100%;
+}
+#nav>li{
+    width: 19%;
+    height: 100%;
+
+}
+#nav>li>a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+    line-height: 50px;
+    background: rgba(0, 210, 153, 0.4);
+    color: #d20239;
+    font-weight: bold;
+
+}
+#nav>li:last-child>a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    font-size: 15px;
+    line-height: 50px;
+    background: rgba(37, 200, 65, 0.5);
+    font-weight: bold;
+    color: #0021d2;
+
+}
