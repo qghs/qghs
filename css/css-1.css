@@ -22,6 +22,7 @@
 #nav>li{
     width: 19%;
     height: 100%;
+    margin-left: 9px;
 
 }
 #nav>li>a{
@@ -47,4 +48,16 @@
     font-weight: bold;
     color: #0021d2;
 
+}
+.two{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    outline: 2px solid red;
+}
+.dropdown-menu{
+    min-width: 100%;
+}
+.dropdown-menu>li>a{
+    text-align: center;
 }
