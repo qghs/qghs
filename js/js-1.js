@@ -42,7 +42,7 @@ $(function () {
     setInterval(a,1000);
 
 
-    $("#fanka").click(function () {
+    $(".fanka").click(function () {
         alert("由于该项目是jsp格式，个人技术问题无法在页面中显示出来，抱歉！");
        var w= confirm("是否前往“凡客诚品官网？");
         if(w==true){
