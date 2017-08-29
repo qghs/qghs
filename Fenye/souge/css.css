@@ -1,0 +1,343 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 宋体;
+}
+/*第一部分*/
+.one {
+	float: left;
+	width: 100%;
+	height: 30px;
+	border: 1px solid #E1E1E1;
+	background: #F8F8F8;
+	font-size: 12px;
+}
+a {
+	text-decoration: none;
+}
+.one1 {
+	margin: auto;
+	width: 1000px;
+	height: 30px;
+	border: 0px solid red;
+}
+.one1 a {
+	float: left;
+	line-height: 30px;
+	color: #7A7A7A;
+	text-decoration: none;
+}
+.one1 a:hover {
+	color: #FF8049;
+}
+.one1 span {
+	float: right;
+	display: block;
+}
+.one2 {
+	float: left;
+	background: url(%E6%90%9C%E7%8B%97/separator.png)center 2px no-repeat;
+	width: 35px;
+	height: 25px;
+}
+/*第二部分*/
+.two {
+	float: left;
+	width: 100%;
+	height: 70px;
+}
+.two1 {
+	margin: auto;
+	width: 1000px;
+	height: 70px;
+	border: 0px solid red;
+}
+.two1 img {
+	float: left;
+	margin-top: 15px;
+}
+.two2 input {
+	float: right;
+	margin-top: 20px;
+	width: 295px;
+	height: 28px;
+	border: none;
+	border: 1px solid #E1E1E1;
+	border-right: none;
+}
+#two3 {
+	float: right;
+	
+	margin-top:5px;
+}
+.two1 p img {
+	margin: 53px 0 0 280px;
+}
+/*第三部分*/
+.three {
+	float: left;
+	width: 100%;
+	height: 35px;
+	background: #FC6B2D;
+}
+.three1 {
+	margin: auto;
+	width: 1000px;
+	height: 35px;
+	border: 0px solid red;
+}
+.three1 a {
+	float: left;
+	display: block;
+	text-align: center;
+	width: 110px;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 30px;
+	color: #FFF;
+	font-size: 20px;
+}
+.three1 a:hover {
+	width: 110px;
+	height: 35px;
+	background: #E94F0D;
+	text-align: center;
+	line-height: 35px;
+}
+/*第四部分*/
+.four {
+	float: left;
+	width: 100%;
+	height: 400px;
+}
+.four1 {
+	margin: auto;
+	background: url(%E6%90%9C%E7%8B%97/banner_1.png);
+	width: 1350px;
+	height: 400px;
+}
+.four1 img {
+	float: left;
+	margin-left: 50%;
+	margin-left: 316px;
+	margin-top: 110px;
+}
+.four2 {
+	float: left;
+	width: 500px;
+	height: 55px;
+	border: 0px solid red;
+	margin: 30px 0 0 390px;
+}
+#a:hover {
+	opacity: 0.8;
+}
+#b:hover {
+	opacity: 0.8;
+}
+.four2 a {
+	float: left;
+	display: block;
+	width: 227px;
+	height: 55px;
+	background: #FA7141;
+	margin-right: 20px;
+	font-size: 26px;
+	text-align: center;
+	line-height: 55px;
+	color: #FFF;
+	border: 0px;
+	border-radius: 10px;
+}
+.four1 p {
+	float: left;
+	margin-top: 25px;
+	margin-left: 430px;
+	color: #A1A9B0;
+}
+/*第五部分*/
+.five {
+	float: left;
+	width: 100%;
+	height: 900px;
+}
+.five1 {
+	margin: auto;
+	width: 1000px;
+	height: 900px;
+	border: 0px solid red;
+	margin-top: 40px;
+}
+.five2 {
+	float: left;
+	width: 700px;
+	height: 900px;
+	border: 0px solid #0F0;
+}
+.five21 {
+	float: left;
+	width: 333px;
+	height: 170px;
+	border: 0px solid red;
+}
+.five211 {
+	float: right;
+	width: 333px;
+	height: 170px;
+	border: 0px solid red;
+}
+.five22 {
+	float: left;
+	width: 333px;
+	height: 123px;
+	border: 1px solid #D7D7D7;
+}
+.five22 img {
+	float: left;
+	width: 320px;
+	height: 110px;
+	margin: 7px 0 0 7px;
+}
+.five23 {
+	float: left;
+	width: 333px;
+	height: 45px;
+	border: 0px solid red;
+}
+.five23 p:hover {
+	color: #FF8049;
+}
+.five23 input:hover{ width:71px; background:#EFEFEF;}
+.five p {
+	float: left;
+	font-size: 12px;
+	line-height: 45px;
+	color: #597622;
+}
+.five input {
+	float: right;
+	width: 70px;
+	height: 25px;
+	border: none;
+	border: 1px solid #D7D7D7;
+	background: #F9F9F9;
+	color: #7B7B7B;
+	margin-top: 10px;
+}/*下载主题部分已完成*/
+.five4 {
+	float: left;
+	width: 700px;
+	height: 180px;
+}
+.five41 {
+	float: left;
+	width: 90px;
+	height: 140px;
+	border: 0px solid red;
+}
+.five41 img {
+	float: left;
+	width: 90px;
+	height: 90px;
+}
+.five42 {
+	float: left;
+	width: 90px;
+	height: 140px;
+	border: 0px solid red;
+	margin-left: 32px;
+}
+.five41 input {
+	float: left;
+	width: 70px;
+	height: 24px;
+	margin-left: 10px;
+}
+.five42 input {
+	float: left;
+	width: 70px;
+	height: 24px;
+	margin-left: 10px;
+}
+.five42 img {
+	float: left;
+	width: 90px;
+	height: 90px;
+}
+/*扩展功能部分已完成*/
+.five5 {
+	float: left;
+	width: 700px;
+	height: 150px;
+	border: 0px solid #06F;
+}
+.five51 {
+	float: left;
+	width: 90px;
+	height: 90px;
+	border: 1px solid #D7D7D7;
+}
+.five51 img {
+	float: left;
+	margin: 3px 0 0 3px;
+}
+.five5 p {
+	float: left;
+	margin-top: 90px;
+	margin-left: -60px;
+}
+.five52 {
+	float: left;
+	width: 90px;
+	height: 90px;
+	border: 1px solid #D7D7D7;
+	margin-left: 28px;
+}
+.five52 img {
+	float: left;
+	margin: 3px 0 0 3px;
+}
+.five5 p:hover {
+	color: #FF8049;
+}
+/*词库推荐已完成*/
+/*右边部分*/
+.five3 {
+	float: right;
+	width: 270px;
+	height: 900px;
+	border: 0px solid #0F0;
+}
+.five3 img{ float:left;}
+.five31 {
+	width: 270px;
+	height: 140px;
+	border: 0px solid red;
+}
+.five31 p {
+	float: left;
+	margin-top: -12px;
+	width: 270px;
+	border-bottom: 1px dashed #E3E3E3;
+}
+.five31 p:hover {
+	color: #FF8049;
+}
+.five31 font:hover {
+	color: #FF8049;
+}
+/*最后*/
+.last {
+	float: left;
+	width: 100%;
+	height: 200px;
+	background: #F5F5F5;
+}
+.last1 {
+	margin: auto;
+	width: 616px;
+	height: 142px;
+	border: 0px solid red;
+	margin-top: 40px;
+}

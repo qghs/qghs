@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "宋体";
+}
+a{
+    text-decoration:none ;
+}
+.guess_like{
+    width: 100%;
+    height: 8200px;
+    background-color: #F5F5F5;
+}
+.guess_like_center{
+    width:1190px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+.guess_like_center>div>h3{
+    position:relative;
+    left: 50%;
+    width: 114px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: -70px;
+    padding: 15px 10px 0px 10px;
+    background: #FFF;
+    color: #3c3c3c;
+}
+.guess_heart{
+    width:300px;
+    height:25px;
+    margin: auto;
+    border-bottom: 1px solid #EEEEEE;
+}
+.heart_text{
+    position:relative;
+    left: 48%;
+    top: 5px;
+    width: 200px;
+    padding-left: 10px;
+    margin-left: -100px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.guess_like_center ul{
+    height:7980px;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-right: -20px;
+}
+.guess_like_center ul li{
+    float: left;
+    margin-right: 8px;
+    margin-top: 28px;
+    float: left;
+    border: 1px solid transparent;
+    background-color: #f5f5f5;
+    color: #6c6c6c;
+    width: 222px;
+    height: 302px;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.3s;
+    font-size: 12px;
+    cursor: pointer;
+}
+.guess_like_center ul li:last-child:hover{
+    border: none;
+}
+.guess_like_center ul li:hover{
+    border:1px solid #FF4400;
+}
+
+.guess_like_center ul li a img{
+    width:223px;
+    height:223px;
+    overflow: hidden;
+    transition:all 0.5s;
+}
+.guess_like_center ul li a img:hover{
+    opacity: 0.8;
+}
+.guess_like_center ul li h3{
+    font-weight: normal;
+    font-size: 12px;
+    padding: 3px 12px;
+    line-height: 18px;
+    color: #6c6c6c;
+    transition: color 0.3s;
+    height: 36px;
+    overflow: hidden;
+}
+.guess_like_center ul li p{
+    margin-top: 6px;
+    padding: 0 10px;
+}
+.guess_like_price{
+    float: left;
+    color: #FF4400;
+    font-size: 17px;
+    font-weight: bold;
+}
+.guess_like_sales{
+    float: right;
+    color: #9ca0aa;
+    margin-top: 3px;
+}
+.guess_same{
+    position: relative;
+    top:-70px;
+    display: none;
+}
+.guess_like_end{
+    display: none;
+    position: absolute;
+    text-align: center;
+    color: #ccccd0;
+    left: 50%;
+    width: 84px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: -42px;
+    font-style: normal;
+    background: #FFF;
+}
+.guess_like_end::before{
+    margin-left: -70px;
+}
+.guess_like_end::after{
+    margin-left: 10px;
+}
+.guess_like_end::before,.guess_like_end::after{
+    content: ' ';
+    position: absolute;
+    height: 0;
+    line-height: 0;
+    border-top: 1px solid #e6e6e6;
+    width: 60px;
+    top: 50%;
+}
+.guess_like_comment{
+    height:50px;
+    width:1110px;
+    margin:0 auto;
+    padding: 20px;
+    //border: 2px solid #FF4400;
+    background-color: #F5F5F5;
+}
+.guess_like_comment img{
+    border-radius: 50%;
+    position: absolute;
+}
+.guess_like_comment p{
+    font-size: 18px;
+    color: #FF4400;
+    font-weight: bold;
+}
+.guess_like_comment textarea{
+    padding: 10px;
+    margin-left: 50px;
+    width: 1040px;
+    height:30px;
+}
+.guess_like_comment_2{
+    height:40px;
+    width:1150px;
+    margin:0 auto;
+    background-color: #F5F5F5;
+}
+
+.guess_like_comment_2 a{
+    float: right;
+    margin-right: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    display: block;
+    width:60px;
+    height:25px;
+    background-color: #FF4400;
+}
+.guess_like_comment_2 img{
+    margin: 0 8px;
+    vertical-align: text-bottom;
+    width:16px;
+    height: 16px;
+}
+.comment_mark_1{
+    margin-left: 20px;
+    font-size: 12px;
+    display: block;
+    float: left;
+    margin-top:8px;
+}
+.comment_mark_2{
+    margin-left: 10px;
+    color: #999999;
+    font-size: 12px;
+}
+#t-pf-ul{
+    width: 180px;
+    height:50px;
+    position: relative;
+}
+#t-pf-ul ol{
+    width: 35px;
+    height: 30px;
+    float: left;
+    background: url("images/5star.png") no-repeat center;
+    background-size: 20px;
+    cursor:pointer;
+}
+#t-pf-ul ol.on{
+    background: url("images/5starorg.png") no-repeat center;
+    background-size: 20px;
+}
+ #t-pf-box p{
+    position:absolute;
+    top:40px;
+    left: 0;
+    width: 160px;
+    height: 60px;
+    border:1px solid #e0e0e0;
+    font-size: 12px;
+    padding:7px 10px 0;
+    display: none;
+    background: #fff;
+}
+ #t-pf-box p em{
+    color: #f40;
+    display: block;
+    font-style: normal;
+
+ }
+ #t-pf-box span strong{
+    color: #f40;
+ }
+
+

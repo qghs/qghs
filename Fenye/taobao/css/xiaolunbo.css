@@ -1,0 +1,68 @@
+.xiaolunbo-01 {
+    width: 520px;
+    height: 220px;
+    background: #f00;
+
+}
+.TianMiao{ width: 520px;
+    height: 17px;
+    position: relative;
+    background: #fff;
+    border-bottom: 3px solid #C12C26;  }
+#xiaolunbo-01-1{
+
+    width: 520px;
+    height: 220px;
+    position: relative;
+}
+.igm{
+    position: absolute;
+    width:520px;
+    height: 200px;
+}
+#xiaolunbo-01-left{
+    position: absolute;
+    float: left;
+    top:82.5px;
+    width: 25px;
+    height: 35px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    display: none;
+}
+#xiaolunbo-01-right{
+    position: absolute;
+    left: 495px;
+    top:82.5px;
+    width: 25px;
+    height: 35px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    display: none;
+}
+#xiaolunbo-01-left:hover{background: rgba(0,0,0,0.8);}
+#xiaolunbo-01-right:hover{background: rgba(0,0,0,0.8);}
+#xiaolunbo-01-left img{
+  margin: 10px 0 0 5px;
+}
+#xiaolunbo-01-right img{
+    margin: 10px 0 0 5px;
+}
+#xiaolunbo-01-bottom{
+    position: absolute;
+    top:180px;
+    left: 220px;
+    width: 96px;
+    height: 15px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.2);
+}
+#xiaolunbo-01-bottom p{
+    margin-top: 2px;
+    margin-left: 5px;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #B7B7B7;
+}

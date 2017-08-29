@@ -49,15 +49,17 @@
     color: #0021d2;
 
 }
-.two{
-    margin-top: 100px;
-    width: 100%;
-    height: 500px;
-    outline: 2px solid red;
-}
+
 .dropdown-menu{
     min-width: 100%;
 }
 .dropdown-menu>li>a{
     text-align: center;
+    padding: 5px 0;
+}
+.two{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    outline: 0px solid red;
 }

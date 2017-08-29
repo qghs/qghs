@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "宋体";
+}
+a{
+    text-decoration:none ;
+}
+li{
+    list-style: none;
+}
+.must_buy{
+    margin-top: 20px;
+    width: 100%;
+    height: 700px;
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+}
+.must_buy_center{
+    width: 1190px;
+    height: 700px;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+.buy_list h3{
+    left: 50%;
+    width: 114px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 80px;
+    padding: 15px 10px;
+    background: #FFF;
+    color: #3c3c3c;
+}
+.buy_list{
+    width:300px;
+    height:25px;
+    margin: auto;
+    border-bottom: 1px solid #EEEEEE;
+}
+.must_buy_4{
+    float: left;
+    width: 570px;
+    height:300px;
+    margin-top:30px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.must_buy_4 h3{
+    line-height: 22px;
+    height: 22px;
+    font-weight: normal;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+}
+.must_buy_share{
+    width: 570px;
+    line-height: 20px;
+    padding-top: 10px !important;
+}
+.must_buy_4 p{
+    color: #999;
+    margin-top: 4px;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.must_buy_4 img{
+    height:180px;
+    width:180px;
+    padding: 0;
+}
+.mb_img{
+    float: left;
+    padding: 3px 3px 0 3px;
+    background: #f4f4f4;
+}
+.must_buy_4 ul li.second>.mb_img{
+    padding: 3px 0 0 0;
+    background: #f4f4f4;
+}
+
