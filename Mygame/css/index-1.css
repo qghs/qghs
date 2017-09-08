@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(0,179,77,0.5);
+}
+.logo{
+    margin: 50px auto;
+    position: relative;
+    width: 800px;
+    height: 400px;
+    outline: 10px groove #ff9075;
+}
+.text-logo{
+
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    margin-left: -225px;
+    outline: 0px solid darkkhaki;
+    width: 450px;
+    height:50px;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.btn{
+    margin:150px 95px;
+    color: #ff2968;
+    font-weight: bold;
+}
+.two{
+   position: absolute;
+    left: 50%;
+    margin-top: 50px;
+    margin-left:-200px;
+    width: 400px;
+    height: 500px;
+    outline: 7px groove darkblue;
+}
+.two-1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #c6ffe3;
+}
+.two-2>input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #bc6b0b;
+    border-radius: 10px;
+}
+.form-btn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #763994;
+    font-weight: bold;
+    margin: 30px 45px;
+    cursor: pointer;
+}
+.form-btn:hover{
+    color: #859449;
+    background: #b70d10;
+}
