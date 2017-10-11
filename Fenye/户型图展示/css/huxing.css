@@ -135,6 +135,8 @@
 }
 .yeshu{
     width: 50px;
+    height: 24px;
+    text-align: center;
 }
 .kuang{
    border-right: 1px solid #a3a3a3;
@@ -171,5 +173,11 @@
     }
     .op-up>span{
         font-size: 12px;
+    }
+    .kuang{
+        width: 100px;
+    }
+    .op-up>.z-ao{
+        width: 50px;
     }
 }

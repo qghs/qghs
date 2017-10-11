@@ -34,8 +34,14 @@ $(function () {
 $('.dan').on('click',function () {
     var j=0;
     for(var i=0;i<$('.dan').length;i++){
-            if( $('.dan').eq(i).is(':checked')){
+            if( $('.dan').eq(i).is(':checked')){//判断是否选中，并把选中个数显示在选中总数上
                 j=j+1;
+            }else if($('.dan').eq(i).prop('checked',false)){
+                $('.kuang>input').prop('checked',false);//判断如果有一个没选中，全选就不选
+
+            }
+            if(j==$('.dan').length){
+                $('.kuang>input').prop('checked',true);//判断如果全部选中，全选就勾选
             }
         }
 
