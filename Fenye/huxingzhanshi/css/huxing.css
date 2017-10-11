@@ -248,7 +248,13 @@
         margin: 3px;
         font-size: 10px;
     }
+
     .city-2>li{
         padding: 4px 5px ;
     }
+    .yeshu{
+        width: 35px;
+        height: 24px;
+    }
+
 }
