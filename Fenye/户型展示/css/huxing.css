@@ -87,6 +87,7 @@
     text-align: center;
     line-height: 36px;
     border-right: 1px solid #C9C9C9;
+    cursor: pointer;
 }
 .sou>.select>span>b{
     margin-left: 10%;
@@ -248,13 +249,7 @@
         margin: 3px;
         font-size: 10px;
     }
-
     .city-2>li{
         padding: 4px 5px ;
     }
-    .yeshu{
-        width: 35px;
-        height: 24px;
-    }
-
 }
