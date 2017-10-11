@@ -22,18 +22,21 @@
         </div>
         <div class="col-md-6">
             <div class="sou">
-                <select>
-                    <option>广州</option>
-                    <option>广州</option>
-                    <option>广州</option>
-                    <option>广州</option>
-                    <option>广州</option>
-                </select>
-                <input type="text" placeholder="输入区域、楼盘或小区名">
+                <div class="select">
+                    <span>选择地区<b class="glyphicon glyphicon-chevron-down"></b></span>
+                </div>
+                <input type="text"  placeholder="输入区域、楼盘或小区名">
                 <button>
                     搜索
                 </button>
+                <div class="city">
+                    <div id="triangle-up"></div>
+                    <ul class="city-2">
+                        <li><a href="#">广州</a></li>
+                    </ul>
+                </div>
             </div>
+
         </div>
         <div class="col-md-12">
             <div class="l-x">
@@ -256,7 +259,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-xs-12">
-                            <div class="fenye img-responsive">
+                            <div class="fenye img-responsive visible-md visible-lg">
                                 <ul class="pagination pagination-lg pull-right">
                                     <li><a href="#">&laquo;</a></li>
                                     <li><a href="#">1</a></li>
@@ -267,7 +270,29 @@
                                     <li><a href="#">&raquo;</a></li>
                                     <li>
                                         <a>跳转<input type="text" class="yeshu">页</a>
+                                    </li>
+                                    <li>
                                         <a>
+                                            <button class="btn btn-danger  btn-xs">GO</button>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="fenye img-responsive visible-xs visible-sm">
+                                <ul class="pagination pagination-sm pull-right">
+                                    <li><a href="#">&laquo;</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">&raquo;</a></li>
+                                    <li>
+                                        <a>跳转<input type="text" class="yeshu" style="width: 40px; height: 18px;">页</a>
+                                    </li>
+                                    <li>
+                                        <a style="padding: 3px 10px">
                                             <button class="btn btn-danger  btn-xs">GO</button>
                                         </a>
                                     </li>
@@ -363,9 +388,10 @@
                             </div>
 
                         </div>
-
+                        <!--分页部分，这里共有两部分，电脑端和移动端-->
                         <div class="col-md-12 col-xs-12">
-                            <div class="fenye">
+                            <!--电脑端部分-->
+                            <div class="fenye img-responsive visible-md visible-lg">
                                 <ul class="pagination pagination-lg pull-right">
                                     <li><a href="#">&laquo;</a></li>
                                     <li><a href="#">1</a></li>
@@ -376,10 +402,38 @@
                                     <li><a href="#">&raquo;</a></li>
                                     <li>
                                         <a>跳转<input type="text" class="yeshu">页</a>
-                                        <a><button class="btn btn-danger btn-xs">GO</button></a>
                                     </li>
+                                    <li>
+                                        <a>
+                                            <button class="btn btn-danger  btn-xs">GO</button>
+                                        </a>
+                                    </li>
+
                                 </ul>
                             </div>
+                            <!--电脑端部分结束-->
+                            <!--移动端部分-->
+                            <div class="fenye img-responsive visible-xs visible-sm">
+                                <ul class="pagination pagination-sm pull-right">
+                                    <li><a href="#">&laquo;</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">&raquo;</a></li>
+                                    <li>
+                                        <a>跳转<input type="text" class="yeshu" style="width: 40px; height: 18px;">页</a>
+                                    </li>
+                                    <li>
+                                        <a style="padding: 3px 10px">
+                                            <button class="btn btn-danger  btn-xs">GO</button>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!--移动端部分结束-->
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@
     background: #ffffff;
 }
 .l-x>p{
-    padding: 20px 20px 10px;
+    padding: 10px 20px 0;
     width: 100%;
     height: auto;
 }
@@ -33,14 +33,64 @@
     background: #fff;
 
 }
-.sou>select{
+.city{
+    position: absolute;
+    z-index: 100;
+    top:25px;
+    margin-top:40px;
+    width:70% ;
+    overflow: hidden;
+    border-radius: 15px;
+    background:white;
+    box-shadow:0 0 10px #1d1ba1;
+    display: none;
+}
+#triangle-up {
+    position: absolute;
+    top:-15px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+}
+.city-2>li{
+    list-style: none;
+    float: left;
+    padding: 8px 10px ;
+}
+.city-2>li>a{
+    padding: 5px;
+}
+.city-2>li>a:hover{
+    background: #1da194;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    box-shadow:0 0 5px #06606e;
+}
+.city-1{
+    position: absolute;
+    z-index: 200;
+    width:6% ;
+    height: 90px;
+    outline: #7fa105;
+}
+.sou>.select{
     float: left;
     height:36px;
     width: 18%;
     margin-top: 2px;
     border: none;
     font-size: 14px;
+    text-align: center;
+    line-height: 36px;
     border-right: 1px solid #C9C9C9;
+}
+.sou>.select>span>b{
+    margin-left: 10%;
+    font-size: 12px;
 }
 .sou>input{
     float: left;
@@ -53,6 +103,7 @@
 
 }
 .sou>button{
+    position: relative;
     float: left;
     background: #2a3ba1;
     border: none;
@@ -66,7 +117,7 @@
 .sou>button:hover{
     box-shadow:0 0 10px #1d1ba1;
 }
-.sou>select:hover{
+.sou>.select:hover{
   color: #0d6fba;
 }
 .op-up{
@@ -160,6 +211,7 @@
     background: rgba(127, 161, 5, 0.08);
     box-shadow:5px 5px 15px rgba(127, 161, 5, 0.84);
 }
+
 @media screen and (max-width: 600px) {
     .op-up>button{
         width: 100px;
@@ -183,5 +235,20 @@
     }
     .sou{
         box-shadow:0 0 10px #000000;
+    }
+    .l-x>p>span{
+        padding:2px;
+        font-size: 12px;
+    }
+    .city{
+        width:80%;
+        top: 0px;
+    }
+    .city-2>li>a{
+        margin: 3px;
+        font-size: 10px;
+    }
+    .city-2>li{
+        padding: 4px 5px ;
     }
 }
