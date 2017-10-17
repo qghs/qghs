@@ -194,8 +194,8 @@
     margin-right: 50px;
 }
 .yeshu{
-    width: 50px;
-    height: 24px;
+    width: 40px;
+    height: 22px;
     text-align: center;
 }
 .kuang{
@@ -222,6 +222,13 @@
 .yye{
     cursor: pointer;
 }
+/*分页*/
+.box{
+    float: right;
+    margin: 50px 0;
+
+}
+
 
 @media screen and (max-width: 600px) {
     .op-up>button{
@@ -261,5 +268,11 @@
     }
     .city-2>li{
         padding: 5px 6px ;
+    }
+    .f-y1>li>a{
+        height: 34px;
+    }
+    .f-y2>li>a{
+        height: 34px;
     }
 }
