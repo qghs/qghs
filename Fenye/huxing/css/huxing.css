@@ -26,7 +26,7 @@
     color: #0d6fba;
 }
 .sou{
-    margin-top: 15px;
+    margin-top: 10px;
     width: 100%;
     height:40px;
     box-shadow:0 0 15px #a1a1a1;
@@ -43,7 +43,7 @@
     border-radius: 15px;
     background:white;
     box-shadow:0 0 10px #1d1ba1;
-    display: none;
+    display:none;
 }
 #triangle-up {
     position: absolute;

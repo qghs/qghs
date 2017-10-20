@@ -1,42 +1,4 @@
 (function ($) {
-   //ajax请求省份的遍历
-    $.ajax({
-        type:'get',
-        url:'json/chain-city.json',
-        success: function (data) {
-            var dt=data.city;//里面包含各省各市
-            function citys() {
-                var j='';
-                for(var i in dt){//将各省份显示遍历出来
-                    j+=' <li><a href="#">'+dt[i].p+'</a></li>\n';
-                }
-                $('.city-2').html(j);//将各省份显示遍历出来的数据填入方框中
-                $('.city-2>li').on('click',function () {
-                    var j='';
-                    for(var i in dt){
-                        if($(this).find('a').html()==dt[i].p){//判断如果省份与json的省份相同就将市区填入方框中；
-                            for(var k in dt[i].c ){
-                                j+=' <li class="shiqu"><a href="#">'+dt[i].c[k]+'</a></li>\n';
-                            }
-                            $('.city-2').html(j);//将各市区显示遍历出来的数据填入方框中
-                            $('.shiqu').on('click',function () {
-                                citys();
-                                $('.sou>input').attr('value',$(this).find('a').html()).removeAttr('placeholder');
-                                $('.select>span').html('<span>'+$(this).find('a').html()+'<b class="glyphicon glyphicon-chevron-down"></b></span>');
-                                $('.city').slideUp();//方框的显示隐藏
-                            })
-                        }
-                    }
-                })
-            }
-            citys();
-            $('.select>span').on('click',function () {
-                $('.city').slideToggle();//方框的显示隐藏
-            })
-
-
-        }// success
-    })//ajax
     //ajax请求图片列表的遍历
     $.ajax({
         type:'get',
