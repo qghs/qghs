@@ -1,12 +1,12 @@
 $(function () {
     $("#body").css({
-        "background":"url('images/index-3.jpg') no-repeat",
+        "background":"url('images/index-3.jpg') no-repeat",'width':'100%','height':'100%'
     });
     function body() {
         var i=1;
         return function () {//闭包方式
             $("#body").css({
-                "background":"url(\"images/index-"+i+".jpg\") no-repeat",
+                "background":"url(\"images/index-"+i+".jpg\") no-repeat",'width':'100%','height':'100%'
             });
             i++;
             if(i==4){

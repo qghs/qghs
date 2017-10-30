@@ -33,7 +33,8 @@
     font-size: 20px;
     line-height: 50px;
     background: rgba(0, 210, 153, 0.4);
-    color: #d20239;
+    color: #4ee500;
+    text-shadow: 0 0 5px #f00;
     font-weight: bold;
 
 }
@@ -46,7 +47,8 @@
     line-height: 50px;
     background: rgba(37, 200, 65, 0.5);
     font-weight: bold;
-    color: #0021d2;
+    color: #ffffff;
+    text-shadow: 0 0 1px #f00;
 
 }
 
