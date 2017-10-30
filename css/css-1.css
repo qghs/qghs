@@ -33,8 +33,8 @@
     font-size: 20px;
     line-height: 50px;
     background: rgba(0, 210, 153, 0.4);
-    color: #4ee500;
-    text-shadow: 0 0 5px #f00;
+    color: #dd7528;
+    text-shadow: 0 0 1px #f00;
     font-weight: bold;
 
 }
@@ -47,7 +47,7 @@
     line-height: 50px;
     background: rgba(37, 200, 65, 0.5);
     font-weight: bold;
-    color: #ffffff;
+    color: #b800ff;
     text-shadow: 0 0 1px #f00;
 
 }
@@ -64,4 +64,15 @@
     width: 100%;
     height: 500px;
     outline: 0px solid red;
+}
+.navbar-default .navbar-brand{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 1px #f00;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav>li>a,.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 1px #f00;
 }
