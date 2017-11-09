@@ -1,0 +1,237 @@
+/*index部分*/
+.floor-header{
+    height: 50px;
+    background:#464C5B;
+}
+.floor-aside-1{
+    background: #FCFCFC;
+    height: 800px;
+}
+div .floor-panel{
+    padding: 0;
+}
+div .floor-panel>span{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #F2F2F2;
+    background:#FCFCFC;
+}
+div .floor-panel>span a{
+    text-decoration: none;
+}
+a:focus,a:hover{
+    text-decoration: none;
+}
+.floor-biao{
+   display: inline-block;
+   width: 100px;
+    cursor: pointer;
+}
+.floor-biao>span{
+    float: right;
+    margin-top: 7px;
+}
+.panel-group .panel+.panel{
+    margin-top: 0px;
+}
+.panel-default{
+    border:1px solid white;
+}
+.panel-heading{
+    padding: 15px 10px;
+}
+/*首页部分*/
+.index-logo{
+    width: 100%;
+    height: 120px;
+    background:#F2F2F2;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.floorl:nth-child(2)>.index-logo{
+    background: #199ED8;
+    color: #ffffff;
+}
+.floorl:nth-child(3)>.index-logo{
+    background:#7DC856;
+    color: #ffffff;
+}
+.floorl:nth-child(4)>.index-logo{
+    background:#5D6977;
+    color: #ffffff;
+}
+.index-logo>span{
+    float: left;
+    margin:30px 0 0 10%;
+    display: block;
+    width: 60px;
+    height:60px;
+}
+.index-logo>p{
+    float: left;
+    width: 60%;
+    margin-top:30px;
+}
+.index-logo>p>span{
+    width: 100%;
+    text-align: center;
+    float: left;
+    display: block;
+
+}
+.index-logo>p>span:nth-child(2){
+    margin-top: 10px;
+    font-size: 25px;
+}
+.floor-maps-1>div{
+    width: 100%;
+    height: 420px;
+}
+.floor-maps-2>span{
+    display: block;
+    width: 100%;
+}
+.floor-maps-2>span>select{
+    outline:none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.map-floor-1{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight:600;
+    line-height: 50px;
+    background: #F2F2F2;
+}
+.map-floor-2{
+    height: 350px;
+    border: 1px solid #e2e2e2;
+    border-right:none;
+}
+.map-floor-3{
+    height: 350px;
+    border: 1px solid #e2e2e2;
+}
+#tip {
+    background-color: #fff;
+    padding:0 10px;
+    border: 1px solid silver;
+    box-shadow: 3px 4px 3px 0px silver;
+    position: absolute;
+    font-size: 12px;
+    right: 10px;
+    top: 5px;
+    border-radius: 3px;
+    line-height: 36px;
+}
+/*本地账户管理*/
+.floor-account{
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #F2F2F2;
+}
+#floor-portrait{
+    margin:20px auto;
+    width: 100px;
+    background: rgba(146, 255, 0, 0.36);
+    border-radius: 10px;
+    box-shadow:0 0 5px #b2b2b2;
+    height: 100px;
+}
+#floor-portrait-upload{
+    margin:0 auto;
+    width: 83px;
+}
+.fileinput-button {
+    position: relative;
+    display: inline-block;
+}
+
+.fileinput-button input{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.fileinput-button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.fileinput-button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.fileinput-button input{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+}
+#floor-portrait-user{
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px ) {
+    .index-logo{
+        width: 100%;
+        height: 80px;
+        background:#F2F2F2;
+        border-radius: 5px;
+    }
+    .index-logo>span{
+        float: left;
+        margin:20px 0 0 5%;
+        display: block;
+        width: 30px;
+        height:30px;
+    }
+    .index-logo>p{
+        float: left;
+        margin-top:20px;
+    }
+    .index-logo>p>span{
+        font-size: 12px;
+    }
+    .index-logo>p>span:nth-child(2){
+        margin-top:0px;
+        font-size: 16px;
+    }
+
+}

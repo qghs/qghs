@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link rel="shortcut icon" href="../images/logo.png"/>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/floor-Administration.css">
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.1&key=您申请的key值"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <!--头部-->
+    <div class="row" style="padding: 20px; border-bottom: 2px solid #E4E4E4">
+        <div class="col-md-3 col-xs-6 floorl">
+            <div class="index-logo">
+             <span>
+                 <img src="../images/u9444.png " class="img-responsive">
+             </span>
+                <p>
+                    <span>今日注册总数</span>
+                    <span>333</span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6 floorl">
+            <div class="index-logo">
+             <span>
+                 <img src="../images/u9472.png " class="img-responsive">
+             </span>
+                <p>
+                    <span>今日标准版</span>
+                    <span>2309</span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6 floorl">
+            <div class="index-logo">
+             <span>
+                 <img src="../images/u9454.png " class="img-responsive">
+             </span>
+                <p>
+                    <span>今日专业版</span>
+                    <span>333</span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6 floorl">
+            <div class="index-logo">
+             <span>
+                 <img src="../images/u9474.png " class="img-responsive">
+             </span>
+                <p>
+                    <span>今日豪华版</span>
+                    <span>2309</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--世界地图-->
+    <div class="row" style="padding: 20px;">
+        <div class="col-md-6 floor-maps-1">
+            <div>
+                <!--<img src="../images/全世界地图_u9573.png" class="img-thumbnail img-responsive">-->
+                <div id="container"></div>
+            </div>
+
+        </div>
+        <div class="col-md-6 floor-maps-2">
+            <span>
+               <select>
+                   <option>总注册人数</option>
+                   <option>标准版本</option>
+                   <option>专业版</option>
+                   <option>豪华版</option>
+               </select>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>国家</th>
+                            <th>今日新增</th>
+                            <th>昨日新增</th>
+                            <th>本月新增</th>
+                            <th>会员总数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                             <td>中国</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>999K</td>
+                        </tr>
+                        <tr>
+                             <td>中国</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>999K</td>
+                        </tr>
+                    <tr>
+                             <td>中国</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>999K</td>
+                        </tr>
+                        <tr>
+                             <td>中国</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>999K</td>
+                        </tr>
+                        <tr>
+                             <td>中国</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>999K</td>
+                        </tr>
+                        <tr>
+                             <td>中国</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>999K</td>
+                        </tr>
+                        <tr>
+                             <td>中国</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>999K</td>
+                        </tr>
+                        <tr>
+                             <td>中国</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>333</td>
+                             <td>999K</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </span>
+        </div>
+    </div>
+    <!--统计图-->
+    <div class="row" style="padding: 20px;">
+        <div class="col-md-12 col-xs-12">
+            <div class="map-floor-1">
+                注册统计
+            </div>
+            <div class="col-md-2 col-xs-2 map-floor-2">
+
+            </div>
+            <div class="col-md-10 col-xs-10 map-floor-3">
+
+            </div>
+        </div>
+
+
+    </div>
+    <!--统计图-->
+    <div class="row" style="padding: 20px;">
+        <div class="col-md-12 col-xs-12">
+            <div class="map-floor-1">
+                <!--注册统计-->
+            </div>
+            <div class="col-md-2 col-xs-2 map-floor-2">
+
+            </div>
+            <div class="col-md-10 col-xs-10 map-floor-3">
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    var map = new AMap.Map('container', {
+        resizeEnable: true,
+        zoom:1,
+        center: [116.40, 39.91]
+    });
+</script>
+</body>
+</html>
