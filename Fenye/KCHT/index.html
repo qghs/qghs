@@ -9,19 +9,37 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <link rel="stylesheet" href="css/floor-Administration.css">
-    <script src="js/vue.min.js"></script>
 
 </head>
 <body>
 <div class="container-fluid">
     <!--logo-header部分-->
     <header class="row floor-header">
-        <div class="col-md-12"></div>
+        <div class="col-md-10 muns-logor-1">
+            <span id="muns-floor" class="glyphicon glyphicon-menu-hamburger visible-xs visible-sm"></span>
+            <span><b class="glyphicon glyphicon-user"></b>&nbsp;&nbsp;量房神器后台管理系统</span>
+
+        </div>
+        <div class="col-md-2 muns-logor-2" style="padding: 0">
+            <div>
+                <span></span>
+                <span>
+                    <a>用户名</a>
+                    <b class="glyphicon glyphicon-menu-down"></b>
+                </span>
+                <div id="user-floor">
+                    <span><b class="glyphicon glyphicon-wrench"></b><a>修改密码</a></span>
+                    <span><b class="glyphicon glyphicon-off"></b><a>退出</a></span>
+                </div>
+            </div>
+        </div>
     </header>
+    <!--移动端导航部分-->
     <!--logo-header部分结束-->
+
     <article class="row">
-        <aside class="col-md-2 floor-aside-1" style="padding:0px;">
-            <div class="panel-group" id="floor-list">
+        <aside id="floor-list" class="col-md-2 col-xs-6 floor-aside-1 hidden-sm hidden-xs" style="padding:0px;">
+            <div class="panel-group">
                 <div class="panel panel-default">
                     <div class="panel-heading text-center" id="floor-1">
                         <a href="#">首页</a>

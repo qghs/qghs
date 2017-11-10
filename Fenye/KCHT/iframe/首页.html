@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="../css/floor-Administration.css">
     <script src="../js/html5shiv.min.js"></script>
     <script src="../js/respond.min.js"></script>
-    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
-    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
-    <script src="http://webapi.amap.com/maps?v=1.4.1&key=您申请的key值"></script>
-    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+
 </head>
 <body>
 <div class="container-fluid">
@@ -67,24 +64,22 @@
     <!--世界地图-->
     <div class="row" style="padding: 20px;">
         <div class="col-md-6 floor-maps-1">
-            <div>
-                <!--<img src="../images/全世界地图_u9573.png" class="img-thumbnail img-responsive">-->
-                <div id="container"></div>
+            <div id="main">
             </div>
 
         </div>
         <div class="col-md-6 floor-maps-2">
-            <span>
+            <div>
                <select>
                    <option>总注册人数</option>
                    <option>标准版本</option>
                    <option>专业版</option>
                    <option>豪华版</option>
                </select>
-                <table class="table table-striped">
+                <table class="table table-striped floor-mop">
                     <thead>
                         <tr>
-                            <th>国家</th>
+                            <th>中国/省份</th>
                             <th>今日新增</th>
                             <th>昨日新增</th>
                             <th>本月新增</th>
@@ -92,65 +87,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                             <td>中国</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>999K</td>
-                        </tr>
-                        <tr>
-                             <td>中国</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>999K</td>
-                        </tr>
-                    <tr>
-                             <td>中国</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>999K</td>
-                        </tr>
-                        <tr>
-                             <td>中国</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>999K</td>
-                        </tr>
-                        <tr>
-                             <td>中国</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>999K</td>
-                        </tr>
-                        <tr>
-                             <td>中国</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>999K</td>
-                        </tr>
-                        <tr>
-                             <td>中国</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>999K</td>
-                        </tr>
-                        <tr>
-                             <td>中国</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>333</td>
-                             <td>999K</td>
-                        </tr>
+                    <!--<tr>-->
+                        <!--<td></td>-->
+                    <!--</tr>-->
                     </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <button class="btn btn-success"  id="floor-mop-left">上一页</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-warning" id="floor-mop-right">下一页</button>
+                        </td>
+                    </tr>
+                    </tfoot>
                 </table>
-            </span>
+            </div>
         </div>
     </div>
     <!--统计图-->
@@ -159,10 +111,16 @@
             <div class="map-floor-1">
                 注册统计
             </div>
-            <div class="col-md-2 col-xs-2 map-floor-2">
-
+            <div class="col-md-2 col-xs-12 map-floor-2">
+                <h4 class="text-center">本月销售总额</h4>
+                <h2 class="text-center">3333</h2>
+                <h5 class="text-center">10% 同比上周</h5>
+                <br>
+                <h4 class="text-center">本周销售总额</h4>
+                <h2 class="text-center">3333</h2>
+                <h5 class="text-center">10% 同比上周</h5>
             </div>
-            <div class="col-md-10 col-xs-10 map-floor-3">
+            <div class="col-md-10 col-xs-12 map-floor-3" id="biao-1">
 
             </div>
         </div>
@@ -173,12 +131,18 @@
     <div class="row" style="padding: 20px;">
         <div class="col-md-12 col-xs-12">
             <div class="map-floor-1">
-                <!--注册统计-->
+               销售统计
             </div>
-            <div class="col-md-2 col-xs-2 map-floor-2">
-
+            <div class="col-md-2 col-xs-12 map-floor-2">
+                <h4 class="text-center">本月销售总额</h4>
+                <h2 class="text-center">3333</h2>
+                <h5 class="text-center">10% 同比上周</h5>
+                <br>
+                <h4 class="text-center">本周销售总额</h4>
+                <h2 class="text-center">3333</h2>
+                <h5 class="text-center">10% 同比上周</h5>
             </div>
-            <div class="col-md-10 col-xs-10 map-floor-3">
+            <div class="col-md-10 col-xs-12 map-floor-3" id="biao-2">
 
             </div>
         </div>
@@ -186,15 +150,13 @@
 
     </div>
 </div>
-
 <script src="../js/jquery-3.2.1.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script>
-    var map = new AMap.Map('container', {
-        resizeEnable: true,
-        zoom:1,
-        center: [116.40, 39.91]
-    });
-</script>
+<!--地图-->
+<script src="../js/echarts.min.js"></script>
+<script src="../js/china.js"></script>
+<script src="../js/floordata.js"></script>
+<!--地图-->
+<script src="../js/floor-Admin.js"></script>
 </body>
 </html>
