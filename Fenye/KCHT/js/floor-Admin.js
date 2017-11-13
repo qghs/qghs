@@ -88,7 +88,7 @@ $('.muns-logor-2>div').click(
             type:'piecewise',
             show: false,
             inRange:{
-                color:['green','yellow','red']
+                color:['#88cb1a','#e5d980','red']
             },
             outOfRange:{
                 color:['#fff']
