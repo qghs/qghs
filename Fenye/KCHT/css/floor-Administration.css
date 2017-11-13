@@ -20,12 +20,12 @@
 #muns-floor:hover{
     color: #6ac916;
     box-shadow: 0 0 5px #ffffff;
-    background: #5c626e;
+    background: #739967;
 }
 #muns-floor:active {
-    box-shadow: 0 0 5px #36ff00;
-    background: #030304;
-    color: rgb(255, 208, 7);
+    box-shadow: 0 0 5px #def0cf;
+    background: #5d7e55;
+    color: rgb(162, 233, 143);
 }
 .muns-logor-1{
     height: 50px;
