@@ -1,295 +1,277 @@
 $(function () {
 
+function onelist() {
+
 
     var myChart1 =echarts.init(document.getElementById('biao-1'));
+    var color = "#176e15";
+//'rgba(80,224,255,0.3)'
+    var xAxisData = ['星期一','星期二', '星期三', '星期四', '星期五', '星期六', '星期日'];
+    var seriesData = [100, 120, 150, 170, 130, 10,150];
+    var scale = 1;
     var option1 = {
-        backgroundColor: '#ddd',
         tooltip: {
-            trigger: 'axis'
-        },
-        title: {
-            text: 'X:一周天数\nY: 近一周订单统计',
-            color: '#ddd',
-            fontSize: 10
-            // subtext: '纯属虚构'
-        },
-        legend: {
-
-            data: ['上限', '实际值'],
-            textStyle: {
-                color: '#333',
-                fontSize: 20
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#185164'
+                }
             }
         },
+        backgroundColor: '#e3e7d3',
+        color: ['#766c2e'],
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
         toolbox: {
-            show: true,
             feature: {
-                dataZoom: {},
-                dataView: {
-                    readOnly: false
-                },
-                magicType: {
-                    type: ['line', 'bar']
-                },
-                restore: {},
                 saveAsImage: {}
             }
         },
-
         xAxis: {
-
             type: 'category',
             boundaryGap: false,
-            splitLine: {
-                show: true,
-                lineStyle: {
-                    type: 'dotted'
+            axisLabel: {
+                showMinLabel:false,
+                textStyle: {
+                    color: color,
+                    fontSize: 13*scale,
                 }
             },
-            axisLabel: {
-                textStyle: {
-                    color: '#333',
-                    fontSize: 20
-                },
+            axisTick: {
+                inside:true,
+                lineStyle: {
+                    color: color,
+                }
             },
             axisLine: {
                 lineStyle: {
-                    color: '#333'
+                    color: color,
                 }
             },
-
-            data: ['天数','周一', '周二', '周三', '周四', '周五', '周六', '周天', '一周总数'],
+            splitLine: {
+                lineStyle: {
+                    color: color,
+                    type: 'dashed',
+                }
+            },
+            name: '销售情况(%)',
+            nameTextStyle: {
+                color: color,
+                fontSize: 13*scale,
+                padding: [0, 0, 50, -100]
+            },
+            data: xAxisData
         },
         yAxis: {
             type: 'value',
+            max:200,
             axisLabel: {
-                formatter: '{value}',
                 textStyle: {
-                    color: '#333',
-                    fontSize: 20
+                    color: color,
+                    fontSize: 16*scale,
                 }
             },
-            min: 0,
+            axisTick: {
+                lineStyle: {
+                    color: color,
+                }
+            },
             axisLine: {
                 lineStyle: {
-                    color: '#333'
+                    color: color,
                 }
             },
             splitLine: {
-                show: true,
                 lineStyle: {
-                    type: 'dotted'
-                }
-            }
+                    color: color,
+                    type: 'dashed',
+                },
+                show: false
+            },
+            name: '近一周订单统计',
+            nameTextStyle: {
+                color: color,
+                fontSize: 13*scale,
+                padding: [0, 0, 15, 0]
+            },
         },
         series: [{
-            // name:'实际值',
+            name: '一代销售',
             type: 'line',
-            symbol: 'roundRect',
-            itemStyle: {
-                normal: {
-                    color: 'rgba(117,136,228,0.5)'
-                }
-            },
-            data: [20, 30, 40, 50, 20, 35, 50, 10, 15],
-            lineStyle: {
-                normal: {
-                    color: 'rgba(117,136,228,0.5)',
-                    width: 3
-                }
-            },
-            smooth: true,
+            stack: '总量',
+            smooth: true, //这句就是让曲线变平滑的
+            data: seriesData,
+            symbol: 'circle', //拐点样式
+            symbolSize: 10*scale, //拐点大小
             areaStyle: {
+                normal: {}
+            },
+            itemStyle: {
                 normal: {
                     color: {
                         type: 'linear',
                         x: 0,
                         y: 0,
-                        x2: 1,
+                        x2: 0,
                         y2: 1,
                         colorStops: [{
                             offset: 0,
-                            color: 'rgba(117,136,228,0.5)' // 0% 处的颜色
+                            color: 'rgba(232,183,43,0.6)' // 0% 处的颜色
                         }, {
                             offset: 1,
-                            color: 'rgba(117,136,228,0.5)' // 100% 处的颜色
+                            color: 'rgba(232,183,43,0.6)' // 100% 处的颜色
                         }],
                         globalCoord: false // 缺省为 false
                     }
                 }
             }
-        },
-
-
-            {
-                name: '平行于x轴的趋势线',
-                type: 'line',
-                markLine: {
-                    data: [{
-                        yAxis: 55
-                    }],
-                    lineStyle: {
-                        normal: {
-                            // color: colors[0]
-                        }
-                    }
-                }
-            }, {
-                name: '平行于y轴的趋势线',
-                type: 'line',
-
-                markLine: {
-
-                    itemStyle: {
-                        normal: {
-                            borderWidth: 1,
-
-                            lineStyle: {
-
-                                type: 'dash',
-                                color: '#333 ',
-                                width: 1,
-                            },
-
-                            label: {
-                                formatter: '',
-                                textStyle: {
-                                    fontSize: 16,
-                                    fontWeight: "bolder",
-                                },
-                            }
-                        },
-
-                    },
-                    data: [
-                        // {type: 'average', name: '平均值'},
-                        [{
-                            coord: ['10e5', 0]
-                        }, {
-                            coord: ['10e5', 55]
-                        }],
-                        [{
-                            coord: ['10e8', 0]
-                        }, {
-                            coord: ['10e8', 55]
-                        }]
-                    ]
-                }
-            }
-        ]
+        }, ]
     };
-
-    var index = 0;
-
     myChart1.setOption(option1);
-
+}
+onelist();
 // 表一到此结束
-    var myChart2 =echarts.init(document.getElementById('biao-2'));
-    var colors = ['#5793f3', '#d14a61', '#675bba'];
+    function twolist() {
 
+
+    var myChart2 =echarts.init(document.getElementById('biao-2'));
+    var color = "#6e605f";
+//'rgba(80,224,255,0.3)'
+    var xAxisData = ['星期一','星期二', '星期三', '星期四', '星期五', '星期六', '星期日'];
+    var seriesData = [150, 20, 50, 130, 110, 140,20];
+    var scale = 1;
     var option2 = {
-        color: colors,
-        title: {
-            text: "近一周销售情况"
-        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {
-                type: 'cross'
+                type: 'cross',
+                label: {
+                    backgroundColor: '#ff2d03'
+                }
             }
         },
+        backgroundColor: '#c7e7e5',
+        color: ['#0024ff'],
         grid: {
-            left: '5%',
-            right: '10%',
-            bottom: '16%',
-            top: '8%',
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
             containLabel: true
         },
-        legend: {
-            data: ['销售占率(%)', '新销售数(万)', '销售总数(万)']
-        },
-        dataZoom: [{
-            show: true,
-            start: 0,
-            end: 60,
-            bottom: '8%'
-        },
-
-        ],
-        xAxis: [{
-            type: 'category',
-
-            data: ['2017-01-05', '2017-01-06', '2017-01-07', '2017-01-08', '2017-01-09', '2017-01-10', '2017-01-11', '2017-01-12', '2017-01-13', '2017-01-14', '2017-01-15', '2017-01-16']
-        }],
-        yAxis: [{
-            type: 'value',
-            name: '新销售数占率(%)',
-            min: 0,
-            max: 100,
-            nameRotate: 90,
-            nameGap: 50,
-            nameLocation: "middle",
-            axisLine: {
-                lineStyle: {
-                    color: colors[0]
-                }
-            },
-            axisLabel: {
-                formatter: '{value} %'
-            },
-
-        }, {
-            type: 'value',
-            name: '市场新增数量(万)',
-            min: 0,
-            max: 250,
-            nameRotate: 90,
-            nameGap: 50,
-            nameLocation: "middle",
-            offset: 80,
-            axisLine: {
-                lineStyle: {
-                    color: colors[1]
-                }
-            },
-            axisLabel: {
-                formatter: '{value} '
+        toolbox: {
+            feature: {
+                saveAsImage: {}
             }
-        }, {
-            type: 'value',
-            name: '新销售数(万)',
-            min: 0,
-            max: 25,
-            nameRotate: 90,
-            nameGap: 50,
-            nameLocation: "middle",
-            axisLine: {
-                lineStyle: {
-                    color: colors[2]
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            axisLabel: {
+                showMinLabel:false,
+                textStyle: {
+                    color: color,
+                    fontSize: 13*scale,
                 }
             },
-
-        }],
+            axisTick: {
+                inside:true,
+                lineStyle: {
+                    color: color,
+                }
+            },
+            axisLine: {
+                lineStyle: {
+                    color: color,
+                }
+            },
+            splitLine: {
+                lineStyle: {
+                    color: color,
+                    type: 'dashed',
+                }
+            },
+            name: '销售情况(%)',
+            nameTextStyle: {
+                color: color,
+                fontSize: 13*scale,
+                padding: [0, 0, 50, -100]
+            },
+            data: xAxisData
+        },
+        yAxis: {
+            type: 'value',
+            max:200,
+            axisLabel: {
+                textStyle: {
+                    color: color,
+                    fontSize: 16*scale,
+                }
+            },
+            axisTick: {
+                lineStyle: {
+                    color: color,
+                }
+            },
+            axisLine: {
+                lineStyle: {
+                    color: color,
+                }
+            },
+            splitLine: {
+                lineStyle: {
+                    color: color,
+                    type: 'dashed',
+                },
+                show: false
+            },
+            name: '近一周订单统计',
+            nameTextStyle: {
+                color: color,
+                fontSize: 13*scale,
+                padding: [0, 0, 15, 0]
+            },
+        },
         series: [{
-            name: '新销售数占率(%)',
-            type: 'bar',
-            data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 86.6, 62.2, 32.6, 20.0, 6.4, 3.3]
-        }, {
-            name: '新销售数(万)',
+            name: '一代销售',
             type: 'line',
-            yAxisIndex: 1,
-            data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
-        }, {
-            name: '销售总数(万)',
-            type: 'line',
-            yAxisIndex: 2,
-            data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
-        }]
+            stack: '总量',
+            smooth: true, //这句就是让曲线变平滑的
+            data: seriesData,
+            symbol: 'circle', //拐点样式
+            symbolSize: 10*scale, //拐点大小
+            areaStyle: {
+                normal: {}
+            },
+            itemStyle: {
+                normal: {
+                    color: {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [{
+                            offset: 0,
+                            color: 'rgba(4,106,225,0.6)' // 0% 处的颜色
+                        }, {
+                            offset: 1,
+                            color: 'rgba(4,106,225,0.6)' // 100% 处的颜色
+                        }],
+                        globalCoord: false // 缺省为 false
+                    }
+                }
+            }
+        }, ]
     };
 
     myChart2.setOption(option2);
-
-
+    }
+twolist();
 
 
 

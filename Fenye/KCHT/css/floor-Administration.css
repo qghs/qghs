@@ -1,7 +1,7 @@
 /*index部分*/
 .floor-header{
     height: 50px;
-    background:#464C5B;
+    background: #8bb57d;
 }
 #muns-floor{
     float: left;
@@ -13,7 +13,7 @@
     font-size: 20px;
     text-align: center;
     line-height: 34px;
-    background:#464C5B;
+    background:#8bb57d;
     cursor: pointer;
     margin: 8px 10% 0 0 ;
 }
@@ -39,7 +39,7 @@
     position: relative;
     height: 50px;
     width: 100%;
-    background:#464C5B;
+    background:#8bb57d;
     cursor: pointer;
 }
 #user-floor{
@@ -61,7 +61,7 @@
     font-size: 16px;
     width: 100%;
     height: 40px;
-    color: rgb(0, 0, 0);
+    color: #8bb57d;
 }
 #user-floor>span:nth-child(1){
     margin-top: 10px;
@@ -108,7 +108,8 @@
     padding-left: 5px;
 }
 .muns-logor-2>div:hover{
-    background: #2b2d34;
+    background: #639053;
+    border-radius: 5px;
     color: rgb(2, 205, 109);
 }
 .muns-logor-2>div>span:nth-child(2):hover>a{
@@ -118,9 +119,27 @@
     color: rgb(2, 205, 109);
 }
 .floor-aside-1{
-    background: #FCFCFC;
     height: 800px;
+    background: #ecffdc;
 }
+
+.panel-default>.panel-heading{
+   margin: 0;
+}
+#floor-1,#floor-2,#floor-12{
+    background: #def0cf;
+}
+
+.panel-group{
+    margin-bottom: 1px;
+}
+#xian-floor-1,#xian-floor-3,#xian-floor-4,#xian-floor-5{
+    border-top: none;
+}
+#xian-floor-5{
+    border-bottom:2px solid white;
+}
+
 div .floor-panel{
     padding: 0;
 }
@@ -143,7 +162,11 @@ a:focus,a:hover{
 .floor-biao{
    display: inline-block;
    width: 100px;
+   background: #def0cf;
     cursor: pointer;
+}
+#xian-floor-4>div,#xian-floor-3>div,#xian-floor-2>div{
+    background: #def0cf;
 }
 .floor-biao>span{
     float: right;
@@ -157,7 +180,9 @@ a:focus,a:hover{
 }
 .panel-heading{
     padding: 15px 10px;
+
 }
+
 /*首页部分*/
 .index-logo{
     width: 100%;
@@ -353,6 +378,7 @@ a:focus,a:hover{
         margin-top: 20px;
     }
 
+
 }
 @media (max-width: 992px){
     #user-floor>span>b{
@@ -360,7 +386,7 @@ a:focus,a:hover{
 
     }
     .muns-logor-2>div{
-        background: rgba(70, 76, 91, 0.71);
+        background: #acbf80;
     }
     #floor-list{
         position: absolute;

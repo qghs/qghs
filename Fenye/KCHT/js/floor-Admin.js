@@ -44,14 +44,22 @@ $('.muns-logor-2>div').click(
     $('#muns-floor').click(function () {
         var a= $(window).width() ;
         if(a<=992){
-            $('#floor-list').attr('class','col-md-2 col-xs-5 floor-aside-1');
+            if($('#floor-list').attr('class')=='col-md-2 col-xs-6 floor-aside-1 hidden-sm hidden-xs'){
+                $('#floor-list').attr('class','col-md-2 col-xs-5 floor-aside-1');
+            }else if( $('#floor-list').attr('class')=='col-md-2 col-xs-5 floor-aside-1'){
+                $('#floor-list').attr('class','col-md-2 col-xs-6 floor-aside-1 hidden-sm hidden-xs');
+            }
+
+
+
                for(var i=1;i<=12;i++){
                    $('#floor-'+i+'').click(function () {
-                       $('#floor-list').attr('class','col-md-2 col-xs-5 floor-aside-1 hidden-sm hidden-xs');
+                       $('#floor-list').attr('class','col-md-2 col-xs-6 floor-aside-1 hidden-sm hidden-xs');
                    })
                }
 
         }
+
     })
 
 
@@ -61,114 +69,107 @@ $('.muns-logor-2>div').click(
     // 基于准备好的dom，初始化echarts实例
     var myChart =echarts.init(document.getElementById('main'));
     // 指定图表的配置项和数据
-    var option = {
+    option = {
         title: {
-            text: '2017科创量房神器注册人数',
-            subtext: '数据来源于数据库，单位：人',
-            x: 'center'
+            text: '全国省份总注册人数',
+            subtext:'广州市科创电脑技术开发有限公司'
         },
-        tooltip: {
-            trigger: 'item',
-            formatter: "{a} <br/>{b} : {c}/人"
-        },
+        tooltip:{
+            show:true,
+            formatter:function(params){
+                if(params.value){
+                    return params.name +'<br />'+params.value+'个';
+                }else{
 
-        dataRange: {
-            min: 0,
-            max: 4000,
-            x: 'left',
-            y: 'bottom',
-
-            text: ['高', '低'], // 文本，默认为数值文本
-            calculable: false,
-
-            splitNumber: 0,
-
-
-            color: ['orangered', 'gold','yellow', 'green', 'lightgreen', 'lightgrey']
-        },
-        toolbox: {
-            show: true,
-            orient: 'vertical',
-            x: 'right',
-            y: 'center',
-            feature: {
-                mark: {
-                    show: true
-                },
-                dataView: {
-                    show: true,
-                    readOnly: false
-                },
-                dataZoom: {
-                    show: true
-                },
-                restore: {
-                    show: true
-                },
-                saveAsImage: {
-                    show: true
                 }
             }
         },
-        roamController: {
-            show: true,
-            x: 'right',
-            mapTypeControl: {
-                'china': true
-            }
-        },
-        series: [{
-            name: '注册地方：人数/人',
-            type: 'map',
-            mapType: 'china',
-            roam: true,
-            itemStyle: {
-                normal: {
-                    label: {
-                        show: true
-                    }
-                },
-                emphasis: {
-                    label: {
-                        show: true
-                    }
-                }
+        visualMap:{
+            type:'piecewise',
+            show: false,
+            inRange:{
+                color:['green','yellow','red']
             },
-            data: [
-                {name: '黑龙江', value: 3544},
-                {name: '吉林',   value: 2805},
-                {name: '内蒙古', value: 2250},
-                {name: '山东',   value: 2050},
-                {name: '河南',   value: 1853},
-                {name: '河北',   value: 1670},
-                {name: '辽宁',   value: 1403},
-                {name: '山西',   value: 862},
-                {name: '四川',   value: 765},
-                {name: '云南',   value: 747},
-                {name: '新疆',   value: 705},
-                {name: '甘肃',   value: 577},
-                {name: '陕西',   value: 543},
-                {name: '安徽',   value: 496},
-                {name: '湖北',   value: 332},
-                {name: '贵州',   value: 324},
-                {name: '广西',   value: 280},
-                {name: '重庆',   value: 259},
-                {name: '江苏',   value: 252},
-                {name: '宁夏',   value: 226},
-                {name: '湖南',   value: 188},
-                {name: '天津',   value: 107},
-                {name: '广东',   value: 77},
-                {name: '北京',   value: 49},
-                {name: '浙江',   value: 31},
-                {name: '福建',   value: 21},
-                {name: '青海',   value: 18},
-                {name: '江西',   value: 12},
-                {name: '上海',   value: 2},
-                {name: '西藏',   value: 0},
-                {name: '海南',   value: 8}
-            ]
+            outOfRange:{
+                color:['#fff']
+            }
+        },
 
-        }, ]
+        series: [
+            {
+                type: 'map',
+                map: 'china',
+                aspectScale: 0.75,
+                zoom:1.2,
+                label:{
+                    normal: {
+                        show: false,
+                        textStyle:{
+                            color:'#f3f2ff'
+                        }
+                    },
+                    emphasis: {
+                        show: false,
+                        textStyle:{
+                            color:'#f3f2ff',
+                            fontSize:14
+                        }
+                    }
+                },
+                itemStyle:{
+                    normal:{
+                        borderColor: '#f3f2ff',
+                        borderWidth:1,
+
+                    },
+                    emphasis:{
+                        areaColor: '#ecffa7',
+                    }
+                },
+
+                data:[
+                    { "name": "西藏",value:0},
+                    { "name": "青海",value:0},
+                    { "name": "宁夏",value:10},
+                    { "name": "重庆",value:30},
+                    { "name": "贵州",value:50},
+                    { "name": "甘肃",value:55},
+                    { "name": "云南",value:70},
+                    { "name": "辽宁",value:28},
+                    { "name": "新疆",value:0},
+                    { "name": "黑龙江",value:88},
+                    { "name": "上海",value:120},
+                    { "name": "四川",value:110},
+                    { "name": "广西",value:102},
+                    { "name": "吉林",value:76},
+                    { "name": "内蒙古",value:54},
+                    { "name": "天津",value:76},
+                    { "name": "江西",value:80},
+                    { "name": "湖南",value:43},
+                    { "name": "陕西",value:42},
+                    { "name": "浙江",value:50},
+                    { "name": "广东",value:18},
+                    { "name": "福建",value:66},
+                    { "name": "北京",value:30},
+                    { "name": "海南",value:18},
+                    { "name": "湖北",value:72},
+                    { "name": "安徽",value:80},
+                    { "name": "河南",value:42},
+                    { "name": "江苏",value:27},
+                    { "name": "山西",value:75},
+                    { "name": "山东",value:41},
+                    { "name": "河北",value:31},
+                    { "name": "台湾",value:59},
+                    { "name": "澳门",value:36},
+                    { "name": "香港",value:2},
+
+                ]
+            }
+
+
+        ]
+
+
     };
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
