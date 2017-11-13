@@ -146,7 +146,10 @@
     background: #9daf8e;
 }
 #floor-3>a,#floor-4>a,#floor-5>a,#floor-6>a,#floor-7>a,#floor-8>a,#floor-9>a,#floor-10>a,#floor-11>a{
-    color: #ffffff;
+    color: #3396d8;
+}
+#floor-3:hover a,#floor-4:hover a,#floor-5:hover a,#floor-6:hover a,#floor-7:hover a,#floor-8:hover a,#floor-9:hover a,#floor-10:hover a,#floor-11:hover a{
+    color: #fafffb;
 }
 div .floor-panel{
     padding: 0;
