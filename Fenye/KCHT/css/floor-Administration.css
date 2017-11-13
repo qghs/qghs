@@ -110,13 +110,13 @@
 .muns-logor-2>div:hover{
     background: #639053;
     border-radius: 5px;
-    color: rgb(2, 205, 109);
+    color: rgb(255, 255, 255);
 }
 .muns-logor-2>div>span:nth-child(2):hover>a{
-    color: rgb(2, 205, 109);
+    color: rgb(255, 255, 255);
 }
 .muns-logor-2>div>span:nth-child(2):hover>b{
-    color: rgb(2, 205, 109);
+    color: rgb(255, 255, 255);
 }
 .floor-aside-1{
     height: 800px;
