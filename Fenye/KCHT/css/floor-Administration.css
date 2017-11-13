@@ -170,6 +170,7 @@ a:focus,a:hover{
 .floor-biao{
    display: inline-block;
    width: 100px;
+    color:#337AB7;
     cursor: pointer;
 }
 #xian-floor>div:hover,#xian-floor-1>div:hover,#xian-floor-2>div:hover,#xian-floor-3>div:hover,#xian-floor-4>div:hover,#xian-floor-5>div:hover{
