@@ -49,9 +49,6 @@ $('.muns-logor-2>div').click(
             }else if( $('#floor-list').attr('class')=='col-md-2 col-xs-5 floor-aside-1'){
                 $('#floor-list').attr('class','col-md-2 col-xs-6 floor-aside-1 hidden-sm hidden-xs');
             }
-
-
-
                for(var i=1;i<=12;i++){
                    $('#floor-'+i+'').click(function () {
                        $('#floor-list').attr('class','col-md-2 col-xs-6 floor-aside-1 hidden-sm hidden-xs');
@@ -61,7 +58,14 @@ $('.muns-logor-2>div').click(
         }
 
     })
-
+$('.p1').on('click',function () {
+    $('.p1').css('color','#000000');
+    $(this).css('color','#199ED8');
+})
+    $('.p2').on('click',function () {
+        $('.p2').css('color','#000000');
+        $(this).css('color','#199ED8');
+    })
 
 
 
