@@ -88,7 +88,7 @@ $('.muns-logor-2>div').click(
             type:'piecewise',
             show: false,
             inRange:{
-                color:['#a0b600','#e5ba63','red']
+                color:['#E5E5E5','#3485B3','#2a678c']
             },
             outOfRange:{
                 color:['#fff']
@@ -128,18 +128,18 @@ $('.muns-logor-2>div').click(
                 },
 
                 data:[
-                    { "name": "西藏",value:0},
-                    { "name": "青海",value:0},
-                    { "name": "宁夏",value:10},
-                    { "name": "重庆",value:30},
-                    { "name": "贵州",value:50},
-                    { "name": "甘肃",value:55},
-                    { "name": "云南",value:70},
-                    { "name": "辽宁",value:28},
-                    { "name": "新疆",value:0},
+                    { "name": "西藏",value:111},
+                    { "name": "青海",value:112},
+                    { "name": "宁夏",value:110},
+                    { "name": "重庆",value:110},
+                    { "name": "贵州",value:110},
+                    { "name": "甘肃",value:115},
+                    { "name": "云南",value:110},
+                    { "name": "辽宁",value:118},
+                    { "name": "新疆",value:120},
                     { "name": "黑龙江",value:88},
                     { "name": "上海",value:120},
-                    { "name": "四川",value:110},
+                    { "name": "四川",value:180},
                     { "name": "广西",value:102},
                     { "name": "吉林",value:76},
                     { "name": "内蒙古",value:54},

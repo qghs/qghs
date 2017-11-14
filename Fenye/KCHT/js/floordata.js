@@ -19,7 +19,7 @@ function onelist() {
                 }
             }
         },
-        backgroundColor: '#e3e7d3',
+        backgroundColor: '#fff',
         color: ['#766c2e'],
         grid: {
             left: '3%',
@@ -155,7 +155,7 @@ onelist();
                 }
             }
         },
-        backgroundColor: '#c7e7e5',
+        backgroundColor: '#fff',
         color: ['#0024ff'],
         grid: {
             left: '3%',

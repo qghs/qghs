@@ -1,7 +1,7 @@
 /*index部分*/
 .floor-header{
     height: 50px;
-    background: #8bb57d;
+    background:#367EA9;
 }
 #muns-floor{
     float: left;
@@ -13,19 +13,19 @@
     font-size: 20px;
     text-align: center;
     line-height: 34px;
-    background:#8bb57d;
+    background:#367EA9;
     cursor: pointer;
     margin: 8px 10% 0 0 ;
 }
 #muns-floor:hover{
-    color: #eff4f0;
+    color: #ffffff;
     box-shadow: 0 0 5px #ffffff;
-    background: #739967;
+    background: #30658b;
 }
 #muns-floor:active {
     box-shadow: 0 0 5px #def0cf;
-    background: #5d7e55;
-    color: rgb(162, 233, 143);
+    background: #2a6488;
+    color: rgb(239, 244, 240);
 }
 .muns-logor-1{
     height: 50px;
@@ -39,7 +39,7 @@
     position: relative;
     height: 50px;
     width: 100%;
-    background:#8bb57d;
+    background: #367EA9;
     cursor: pointer;
 }
 #user-floor{
@@ -108,8 +108,10 @@
     padding-left: 5px;
 }
 .muns-logor-2>div:hover{
-    background: #639053;
+    background: #376a95;
     border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
     color: rgb(255, 255, 255);
 }
 .muns-logor-2>div>span:nth-child(2):hover>a{
@@ -120,14 +122,17 @@
 }
 .floor-aside-1{
     height: 800px;
-    background: #ecffdc;
+    background:#F4F3F3;
 }
 
 .panel-default>.panel-heading{
    margin: 0;
 }
 #floor-1,#floor-2,#floor-12{
-    background: #def0cf;
+    background:#F4F3F3;
+}
+#floor-1>a,#floor-2>a,#floor-12>a{
+    color:#5E5956;
 }
 
 .panel-group{
@@ -135,18 +140,19 @@
 }
 #xian-floor-1,#xian-floor-3,#xian-floor-4,#xian-floor-5{
     border-top: none;
+    border-right: none;
 }
 #xian-floor-5{
     border-bottom:2px solid white;
 }
 #floor-3,#floor-4,#floor-5,#floor-6,#floor-7,#floor-8,#floor-9,#floor-10,#floor-11{
-    background: #c1d3b2;
+    background:#F9F9F9;
 }
 #floor-3:hover,#floor-4:hover,#floor-5:hover,#floor-6:hover,#floor-7:hover,#floor-8:hover,#floor-9:hover,#floor-10:hover,#floor-11:hover{
-    background: #9daf8e;
+    background: #45bdf0;
 }
 #floor-3>a,#floor-4>a,#floor-5>a,#floor-6>a,#floor-7>a,#floor-8>a,#floor-9>a,#floor-10>a,#floor-11>a{
-    color: #3396d8;
+    color:#5E5956;
 }
 #floor-3:hover a,#floor-4:hover a,#floor-5:hover a,#floor-6:hover a,#floor-7:hover a,#floor-8:hover a,#floor-9:hover a,#floor-10:hover a,#floor-11:hover a{
     color: #fafffb;
@@ -173,17 +179,17 @@ a:focus,a:hover{
 .floor-biao{
    display: inline-block;
    width: 100px;
-    color:#337AB7;
+    color:#5E5956;
     cursor: pointer;
 }
 #xian-floor>div:hover,#xian-floor-1>div:hover,#xian-floor-2>div:hover,#xian-floor-3>div:hover,#xian-floor-4>div:hover,#xian-floor-5>div:hover{
-    background: #aabc9f;
+    background:#367EA9;
 }
 #xian-floor>div:hover a,#xian-floor-1>div:hover a,#xian-floor-2>div:hover span,#xian-floor-3>div:hover span,#xian-floor-4>div:hover span,#xian-floor-5>div:hover a{
    color: #ffffff;
 }
 #xian-floor-4>div,#xian-floor-3>div,#xian-floor-2>div{
-    background: #def0cf;
+    background:#F4F3F3;
 }
 .floor-biao>span{
     float: right;
@@ -194,12 +200,18 @@ a:focus,a:hover{
 }
 .panel-default{
     border:1px solid white;
+    border-right: none;
+    box-shadow:0 0 2px #a8a8a8;
 }
 .panel-heading{
     padding: 15px 10px;
 
 }
-
+#floor-hezuo{
+  height: 800px;
+    border: 1px solid red;
+    overflow-y: scroll;
+}
 /*首页部分*/
 .index-logo{
     width: 100%;
@@ -403,7 +415,7 @@ a:focus,a:hover{
 
     }
     .muns-logor-2>div{
-        background: #acbf80;
+        background: #3b86b6;
     }
     #floor-list{
         position: absolute;
