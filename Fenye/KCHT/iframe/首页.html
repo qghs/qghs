@@ -33,7 +33,7 @@
                  <img src="../images/u9472.png " class="img-responsive">
              </span>
                 <p>
-                    <span>今日标准版</span>
+                    <span>今日年卡激活数</span>
                     <span>2309</span>
                 </p>
             </div>
@@ -44,7 +44,7 @@
                  <img src="../images/u9454.png " class="img-responsive">
              </span>
                 <p>
-                    <span>今日专业版</span>
+                    <span> 今日终身卡激活数</span>
                     <span>333</span>
                 </p>
             </div>
@@ -55,7 +55,7 @@
                  <img src="../images/u9474.png " class="img-responsive">
              </span>
                 <p>
-                    <span>今日豪华版</span>
+                    <span>近7日卡号激活总数</span>
                     <span>2309</span>
                 </p>
             </div>
@@ -71,10 +71,9 @@
         <div class="col-md-6 floor-maps-2">
             <div>
                <select>
-                   <option>总注册人数</option>
+                   <option>总注册用户数</option>
                    <option>标准版本</option>
                    <option>专业版</option>
-                   <option>豪华版</option>
                </select>
                 <table class="table table-striped floor-mop">
                     <thead>
@@ -113,9 +112,8 @@
                 <div class=" floor-tong">
                         <span>
                             版本:<select>
-                                <option value="">标注版</option>
+                                <option value="">标准版</option>
                                 <option value="">专业版</option>
-                                <option value="">豪华版</option>
                             </select>
                         </span>
                     <span class="p1">今日</span>
@@ -125,17 +123,17 @@
                 </div>
             </div>
             <div class="col-md-2 col-xs-12 map-floor-2">
-                <h4 class="text-center">本月销售总额</h4>
+                <h4 class="text-center">本月新注册用户总数</h4>
                 <h2 class="text-center">3333</h2>
                 <h5 class="text-center">
                     <label class="text-success">
                         <b class="glyphicon glyphicon-triangle-top"></b>
                         <span>10%</span>
                     </label>
-                    同比上周
+                    同比上月
                 </h5>
                 <br>
-                <h4 class="text-center">本周销售总额</h4>
+                <h4 class="text-center">本周新注册用户数量</h4>
                 <h2 class="text-center">3333</h2>
                 <h5 class="text-center">
                     <label class="text-danger">
@@ -166,15 +164,14 @@
     <div class="row" style="padding: 20px;">
         <div class="col-md-12 col-xs-12">
             <div class="map-floor-1">
-               销售统计
+                会员卡激活量
             </div>
             <div class="col-md-12">
                 <div class=" floor-tong">
                         <span>
-                            版本:<select>
-                                <option value="">标注版</option>
-                                <option value="">专业版</option>
-                                <option value="">豪华版</option>
+                            会员卡类型:<select>
+                                <option value="">年卡</option>
+                                <option value="">终身制</option>
                             </select>
                         </span>
                     <span class="p1">今日</span>
@@ -185,17 +182,17 @@
             </div>
 
             <div class="col-md-2 col-xs-12 map-floor-2">
-                <h4 class="text-center">本月销售总额</h4>
+                <h4 class="text-center">本月激活总数</h4>
                 <h2 class="text-center">3333</h2>
                 <h5 class="text-center">
                     <label class="text-success">
                         <b class="glyphicon glyphicon-triangle-top"></b>
                         <span>10%</span>
                     </label>
-                    同比上周
+                    同比上月
                 </h5>
                 <br>
-                <h4 class="text-center">本周销售总额</h4>
+                <h4 class="text-center">本周激活总数</h4>
                 <h2 class="text-center">3333</h2>
                 <h5 class="text-center">
                     <label class="text-danger">
@@ -234,3 +231,147 @@
 <script src="../js/floor-Admin.js"></script>
 </body>
 </html>
+<script>
+    // 地图部分
+    // 基于准备好的dom，初始化echarts实例
+    var myChart =echarts.init(document.getElementById('main'));
+    // 指定图表的配置项和数据
+    option = {
+        title: {
+            text: '全国省份总注册人数',
+            subtext:'广州市科创电脑技术开发有限公司'
+        },
+        tooltip:{
+            show:true,
+            formatter:function(params){
+                if(params.value){
+                    return params.name +'<br />'+params.value+'个';
+                }else{
+
+                }
+            }
+        },
+        visualMap:{
+            type:'piecewise',
+            show: false,
+            inRange:{
+                color:['#E5E5E5','#3485B3','#2a678c']
+            },
+            outOfRange:{
+                color:['#fff']
+            }
+        },
+
+        series: [
+            {
+                type: 'map',
+                map: 'china',
+                aspectScale: 0.75,
+                zoom:1.2,
+                label:{
+                    normal: {
+                        show: false,
+                        textStyle:{
+                            color:'#f3f2ff'
+                        }
+                    },
+                    emphasis: {
+                        show: false,
+                        textStyle:{
+                            color:'#f3f2ff',
+                            fontSize:14
+                        }
+                    }
+                },
+                itemStyle:{
+                    normal:{
+                        borderColor: '#f3f2ff',
+                        borderWidth:1,
+
+                    },
+                    emphasis:{
+                        areaColor: '#ecffa7',
+                    }
+                },
+
+                data:[
+                    { "name": "西藏",value:111},
+                    { "name": "青海",value:112},
+                    { "name": "宁夏",value:110},
+                    { "name": "重庆",value:110},
+                    { "name": "贵州",value:110},
+                    { "name": "甘肃",value:115},
+                    { "name": "云南",value:110},
+                    { "name": "辽宁",value:118},
+                    { "name": "新疆",value:120},
+                    { "name": "黑龙江",value:88},
+                    { "name": "上海",value:120},
+                    { "name": "四川",value:180},
+                    { "name": "广西",value:102},
+                    { "name": "吉林",value:76},
+                    { "name": "内蒙古",value:54},
+                    { "name": "天津",value:76},
+                    { "name": "江西",value:80},
+                    { "name": "湖南",value:43},
+                    { "name": "陕西",value:42},
+                    { "name": "浙江",value:50},
+                    { "name": "广东",value:18},
+                    { "name": "福建",value:66},
+                    { "name": "北京",value:30},
+                    { "name": "海南",value:18},
+                    { "name": "湖北",value:72},
+                    { "name": "安徽",value:80},
+                    { "name": "河南",value:42},
+                    { "name": "江苏",value:27},
+                    { "name": "山西",value:75},
+                    { "name": "山东",value:41},
+                    { "name": "河北",value:31},
+                    { "name": "台湾",value:59},
+                    { "name": "澳门",value:36},
+                    { "name": "香港",value:2},
+
+                ]
+            }
+
+
+        ]
+
+
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    // 左侧表格
+    var sheng=option.series[0].data;
+    var floor_1=0;
+    var floor_2=8;
+    $('.floor-mop').find('tbody').html(map_ta(floor_1,floor_2));
+
+    $('#floor-mop-right').on('click',function () {
+        floor_1=floor_2<sheng.length?floor_1=floor_2:floor_1;
+        floor_2=floor_2<sheng.length-8?floor_2+8:sheng.length;
+        $('.floor-mop').find('tbody').children().remove();
+        $('.floor-mop').find('tbody').html(map_ta(floor_1,floor_2));
+
+    })
+    $('#floor-mop-left').on('click',function () {
+        floor_1=floor_2<=16?0:floor_2-16;
+        floor_2=floor_2<=16?8:floor_2-8;
+        $('.floor-mop').find('tbody').children().remove();
+        $('.floor-mop').find('tbody').html(map_ta(floor_1,floor_2));
+
+    })
+
+    function map_ta(i,j) {
+        var s='';
+        for(i;i<j;i++){
+            s+='<tr>\n' +
+                '      <td>'+sheng[i].name+'</td>\n' +
+                '      <td>'+sheng[i].value+'</td>\n' +
+                '      <td>'+sheng[i].value+'</td>\n' +
+                '      <td>'+sheng[i].value+'</td>\n' +
+                '      <td>'+sheng[i].value+'K</td>\n' +
+                ' </tr>'
+        }
+        return s;
+    }
+</script>

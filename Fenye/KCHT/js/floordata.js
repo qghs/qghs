@@ -59,7 +59,7 @@ function onelist() {
                     type: 'dashed',
                 }
             },
-            name: '销售情况(%)',
+            name: '注册量(%)',
             nameTextStyle: {
                 color: color,
                 fontSize: 13*scale,
@@ -93,7 +93,7 @@ function onelist() {
                 },
                 show: false
             },
-            name: '近一周订单统计',
+            name: '近一周注册人数统计',
             nameTextStyle: {
                 color: color,
                 fontSize: 13*scale,
@@ -101,7 +101,7 @@ function onelist() {
             },
         },
         series: [{
-            name: '一代销售',
+            name: 'X代销售',
             type: 'line',
             stack: '总量',
             smooth: true, //这句就是让曲线变平滑的
@@ -229,7 +229,7 @@ onelist();
                 },
                 show: false
             },
-            name: '近一周订单统计',
+            name: '近一周销售统计',
             nameTextStyle: {
                 color: color,
                 fontSize: 13*scale,
@@ -237,7 +237,7 @@ onelist();
             },
         },
         series: [{
-            name: '一代销售',
+            name: 'X代销售',
             type: 'line',
             stack: '总量',
             smooth: true, //这句就是让曲线变平滑的
